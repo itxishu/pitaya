@@ -13,9 +13,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "aafig-cli build",
-    "r": "react-scripts build",
-    "f": "fig build",
+    "build": "fig build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
