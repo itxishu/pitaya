@@ -1,5 +1,5 @@
 // 判断当前是哪个环境
-const currentEnv = process.env.INIT_APP_ENV;
+const currentEnv = process.env.FIG_ENV;
 const ctext = currentEnv !== 'prod' ? `开课吧${currentEnv}` : '开课吧'
 
 // 不要删除，用来识别当前项目环境

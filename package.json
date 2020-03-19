@@ -25,8 +25,8 @@
   },
   "scripts": {
     "start": "fig -e dev -m start",
-    "dev": "fig -e dev -m starts",
-    "test": "fig -e dev -m build",
+    "dev": "fig -e dev -m start",
+    "test": "fig -e test -m build",
     "build": "fig -e prod -m build",
     "build:prod": "fig -e prod -m build",
     "build:t": "fig build",
