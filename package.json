@@ -9,7 +9,6 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.19.2",
-    "dingding-msg": "^1.0.5",
     "fig-cli": "0.0.5",
     "moment": "^2.24.0",
     "react": "^16.13.0",
