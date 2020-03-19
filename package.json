@@ -24,14 +24,14 @@
     "redux-thunk": "^2.3.0"
   },
   "scripts": {
-    "start": "fig start",
-    "dev": "fig --env dev --mode dev",
-    "test": "fig --env dev --mode dev",
-    "build": "fig --env prod --mode build",
+    "start": "fig -e dev -m start",
+    "dev": "fig -e dev -m starts",
+    "test": "fig -e dev -m build",
+    "build": "fig -e prod -m build",
     "build:prod": "fig -e prod -m build",
     "build:t": "fig build",
-    "build:test": "fig --env test --mode build",
-    "build:dev": "fig --env dev --mode build"
+    "build:test": "fig -e test -m build",
+    "build:dev": "fig -e dev -m build"
   },
   "eslintConfig": {
     "extends": "react-app"
