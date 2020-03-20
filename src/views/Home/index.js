@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 // import classNames from 'classnames/bind'
-// import Button from 'antd/es/button'
+import Button from 'antd/es/button'
 // import styles from './style.module.styl'
 
 export default class Home extends Component {
@@ -13,7 +13,7 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        {/* <Button type="primary">Button</Button> */}
+        <Button type="primary">Button</Button>
         <header className="App-header">
           <img
             src="https://img.kaikeba.com/logo-new@2x.png"
