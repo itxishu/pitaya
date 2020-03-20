@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-// import classNames from 'classnames/bind'
 import Button from 'antd/es/button'
+// import classNames from 'classnames/bind'
 // import styles from './style.module.styl'
 
 export default class Home extends Component {
@@ -20,7 +20,7 @@ export default class Home extends Component {
             className="App-logo"
             alt="logo"
           />
-          ✌️activity page 🏆
+          reactjs 脚手架 2.0： 化繁为简！
         </header>
       </div>
     )
