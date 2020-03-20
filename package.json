@@ -28,8 +28,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "pretty-quick --staged"
+    ]
   },
   "scripts": {
     "start": "fig -e dev -m start",
