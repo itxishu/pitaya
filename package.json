@@ -23,6 +23,11 @@
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.3.0"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  },
   "scripts": {
     "start": "fig -e dev -m start",
     "dev": "fig -e dev -m start",
