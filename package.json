@@ -11,7 +11,7 @@
     "@testing-library/user-event": "^7.1.2",
     "antd": "^4.0.3",
     "axios": "^0.19.2",
-    "fig-cli": "0.0.10",
+    "fig-cli": "0.0.11",
     "husky": "^4.2.3",
     "lint-staged": "^10.0.8",
     "moment": "^2.24.0",

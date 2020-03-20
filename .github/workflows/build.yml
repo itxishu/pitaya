@@ -10,4 +10,4 @@ jobs:
       - name: Install
         run: yarn --no-progress --non-interactive --no-lockfile
       - name: Build
-        run: yarn build
+        run: yarn build:prod
