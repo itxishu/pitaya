@@ -44,7 +44,9 @@
     "dev": "fig -e dev -m start",
     "build:dev": "fig -e dev -m build",
     "build:test": "fig -e test -m build",
-    "build:prod": "fig -e prod -m build"
+    "build:prod": "fig -e prod -m build",
+    "prettier": "prettier -c --write '**/*'",
+    "pretty-quick": "pretty-quick"
   },
   "eslintConfig": {
     "extends": "react-app"
