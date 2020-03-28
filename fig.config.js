@@ -1,5 +1,5 @@
 module.exports = {
-  name: "pitaya",
+  name: "m",
   dingdingNoticeId: "fe",
   lintShow: false
 };
