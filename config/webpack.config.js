@@ -60,34 +60,50 @@ module.exports = function(webpackEnv) {
 
   const getStyleLoaders = (cssOptions, preProcessor) => {
     const loaders = [
-      isEnvDevelopment && require.resolve("style-loader"),
+      isEnvDevelopment && require.resolve('style-loader'),
       isEnvProduction && {
         loader: MiniCssExtractPlugin.loader,
-        options: paths.publicUrlOrPath.startsWith(".")
-          ? { publicPath: "../../" }
-          : {}
+        options: paths.publicUrlOrPath.startsWith('.') ? { publicPath: '../../' } : {},
       },
       {
-        loader: require.resolve("css-loader"),
-        options: cssOptions
+        loader: require.resolve('css-loader'),
+        options: cssOptions,
       },
       {
-        loader: require.resolve("postcss-loader"),
+        loader: require.resolve('postcss-loader'),
         options: {
-          ident: "postcss",
+          ident: 'postcss',
           plugins: () => [
-            require("postcss-flexbugs-fixes"),
-            require("postcss-preset-env")({
+            require('postcss-flexbugs-fixes'),
+            require('postcss-preset-env')({
               autoprefixer: {
-                flexbox: "no-2009"
+                flexbox: 'no-2009',
               },
-              stage: 3
+              stage: 3,
             }),
-            postcssNormalize()
+            require('postcss-pxtorem-x')({
+              rootValue: 16,
+              unitPrecision: 5,
+              mediaQuery: false,
+              minPixelValue: 0,
+              propList: [
+                '*background*',
+                '*padding*',
+                '*margin*',
+                'letter-spacing',
+                '*width',
+                'left',
+                'font*',
+                'right',
+                'top',
+                'bottom',
+              ],
+            }),
+            postcssNormalize(),
           ],
-          sourceMap: isEnvProduction && shouldUseSourceMap
-        }
-      }
+          sourceMap: isEnvProduction && shouldUseSourceMap,
+        },
+      },
     ].filter(Boolean);
     if (preProcessor) {
       loaders.push(
