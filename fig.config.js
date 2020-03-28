@@ -1,5 +1,5 @@
 module.exports = {
   name: "m",
-  dingdingNoticeId: "fe",
+  dingdingNoticeId: "xxxx",
   lintShow: false
 };

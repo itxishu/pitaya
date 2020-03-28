@@ -13,8 +13,10 @@ export default class Home extends Component {
   render() {
     return (
       <div>
-        <Button type="primary">Button</Button>
-        <header className="App-header">reactjs 脚手架 2.0： 化繁为简！</header>
+        <header className="App-header">
+          <Button type="primary">Button</Button>
+          reactjs 脚手架 2.0： 化繁为简！
+        </header>
       </div>
     );
   }
